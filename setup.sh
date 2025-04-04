@@ -29,4 +29,4 @@ else
 fi
 
 # Install all packages from pkglist_aur using yay
-while read pkg; do yay -S --needed $pkg; done < pkglist_aur.txt
+while read pkg; do yay -S --noconfirm --needed $pkg; done < pkglist_aur.txt
